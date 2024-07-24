@@ -24,9 +24,9 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
     <tr>
       <td><?= $i++; ?></td>
       <td><img src="img/<?= $mhs["gambar"]; ?>" width="50"></td>
-      <td><?= $mhs["nrp"]; ?></td>
+      <td><?= $mhs["nama"]; ?></td>
       <td>
-        <a href="detail.php?id=<?= $mhs["id"]; ?>">Lihat Detail></a> 
+        <a href="detail.php?id=<?= $mhs["id"]; ?>">Lihat Detail</a> 
       </td>
     </tr>
     <?php endforeach; ?>
